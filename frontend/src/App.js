@@ -102,9 +102,6 @@ export default function App() {
         <button className="save" onClick={addTask}>
           SAVE
         </button>
-        <button className="refresh" onClick={getTasks}>
-          GET TASKS
-        </button>
       </div>
 
       <div className="table-container">
