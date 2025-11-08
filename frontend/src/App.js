@@ -66,7 +66,7 @@ export default function App() {
 
   useEffect(() => {
     getTasks();
-  }, []);
+  }, [getTasks]);
 
   return (
     <div className="container">
