@@ -90,6 +90,10 @@ export default function App() {
   return (
     <div className="container">
       <h1>To Do App</h1>
+      <p>
+        Build: #{process.env.REACT_APP_BUILD_VERSION || 'dev'} |{' '}
+        {process.env.REACT_APP_GIT_SHA?.substring(0, 7) || 'local'}
+      </p>
 
       <div className="input-group">
         <input

@@ -25,6 +25,10 @@ jobs:
 
       - name: Build frontend
         working-directory: ./frontend
+        env:
+          REACT_APP_API_URL: http://localhost:5000
+          REACT_APP_BUILD_VERSION: ${{ github.run_number }}
+          REACT_APP_GIT_SHA: ${{ github.sha }}
         run: npm run build
 
       - name: Set up Docker Buildx

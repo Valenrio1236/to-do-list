@@ -15,6 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:version": "react-scripts build && echo $GITHUB_SHA > build/version.txt",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
